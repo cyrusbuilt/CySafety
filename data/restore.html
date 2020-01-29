@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+        <label name="ssid" style="font-size:30px; margin-right: 1.67em;">
+            Are you sure you wish to restore settings to factory default?
+        </label><br><br>
+        <button onclick="doRestore()" style="font-size:30px; width:500px;height:40px;">PROCEED!</button>
+    </body>
+    <script type="text/javascript">
+        function doRestore() {
+            setTimeout(() => {
+                window.location.href = "/forceRestore";
+            }, 10000);
+        }
+    </script>
+</html>

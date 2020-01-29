@@ -1,0 +1,16 @@
+# PlatformIO build/lib temp stuff.
+.pio/
+
+# VSCode stuff
+.vscode/
+
+# Don't need these right now
+test/
+include/
+
+# We don't commit these
+certs/
+
+# Packaged gerber exports
+gerber.zip
+CySafety.zip

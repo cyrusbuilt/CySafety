@@ -1,0 +1,83 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=CySafety
+*Date=11:27:40
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;9.48828;-22.3792;0;Bottom;TXT30
+2;;;72.7782;-35.3256;0;Bottom;Via9
+3;;;119.308;-39.5955;0;Bottom;MQ2
+4;;THT;79.1283;-50.5655;0;Bottom;R4
+5;;switch-spdt;21.9783;-86.1255;-90;Bottom;S1
+6;2.2k;THT;103.258;-17.5455;0;Bottom;R2
+7;;;63.3838;-48.832;0;Bottom;TXT29
+8;;;98.7938;-70.487;0;Bottom;TXT25
+9;;5 mm [THT];90.5581;-81.7365;0;Bottom;LED1
+10;;;98.1327;-73.0487;0;Bottom;TXT26
+11;;;80.3983;-18.1805;180;Bottom;BME280
+12;;;63.7208;-34.7309;0;Bottom;Via1
+13;;;63.3838;-51.7953;0;Bottom;TXT28
+14;;;161.678;-88.6655;0;Bottom;Hole4
+15;;;145.142;-32.8899;0;Bottom;IMG2
+16;;;8.29051;-65.4668;0;Bottom;TXT45
+17;;trim_pot;95.6383;-50.5655;0;Bottom;U1
+18;;THT;14.3583;-41.6755;0;Bottom;J3
+19;;;144.181;-50.7066;0;Bottom;TXT46
+20;;;58.2384;-27.1669;0;Bottom;TXT40
+21;;;8.8705;-12.3495;0;Bottom;TXT35
+22;;THT;58.8083;-50.5655;0;Bottom;J2
+23;;THT;143.898;-63.2655;0;Bottom;J5
+24;;;35.9483;-38.6044;180;Bottom;Huzzah ESP8266
+25;;THT;103.258;-73.4255;0;Bottom;J4
+26;;;161.678;-4.84537;0;Bottom;Hole3
+27;;;44.8383;-3.15213;0;Bottom;TXT50
+28;;;4.19828;-88.6655;0;Bottom;Hole1
+29;;;9.48828;-17.4403;0;Bottom;TXT33
+30;;;4.19828;-4.84537;0;Bottom;Hole2
+31;;;7.86717;-55.8183;0;Bottom;TXT51
+32;;;9.89383;-47.9092;0;Bottom;TXT39
+33;;;8.29051;-69.051;0;Bottom;TXT44
+34;;;147.915;-62.9759;0;Bottom;TXT23
+35;;THT;3.69028;-67.4285;180;Bottom;J1
+36;0.1µF;200 mil [THT, electrolytic];72.7783;-73.4255;0;Bottom;C2
+37;;;90.428;-76.3888;0;Bottom;TXT41
+38;;;93.032;-17.5631;0;Bottom;Via10
+39;;;19.8296;-54.8477;0;Bottom;Via7
+40;5V;to-220-alt;47.3783;-76.8291;0;Bottom;IC1
+41;;;82.9384;-88.6655;0;Bottom;Hole6
+42;;;127.706;-72.1555;90;Bottom;ADS1115
+43;;;21.0488;-28.0253;0;Bottom;Via6
+44;0.22mF;200 mil [THT, electrolytic];21.9783;-73.4255;0;Bottom;C3
+45;;5 mm [THT];57.5384;-33.4765;0;Bottom;LED2
+46;;;9.48828;-14.9003;0;Bottom;TXT34
+47;;;76.5224;-33.5117;0;Bottom;Via8
+48;;;9.48828;-19.8392;0;Bottom;TXT32
+49;3.3k;THT;121.038;-17.5455;0;Bottom;R3
+50;;THT;14.3583;-18.8155;0;Bottom;J6
+51;;;145.027;-44.3221;0;Bottom;TXT48
+52;;;147.915;-60.4359;0;Bottom;TXT24
+53;;;82.9384;-4.84537;0;Bottom;Hole5
+54;;;9.48828;-25.0603;0;Bottom;TXT31
+55;;;21.0488;-30.4637;0;Bottom;Via4
+56;;;147.915;-65.657;0;Bottom;TXT22
+57;;;99.1316;-75.882;0;Bottom;TXT27
+58;;;18.0008;-26.1965;0;Bottom;Via5
+59;;;7.70435;-58.1855;0;Bottom;TXT43
+60;;;95.2149;-44.0832;0;Bottom;TXT52
+61;;;128.235;-3.29324;0;Bottom;TXT49
+62;;;145.168;-47.0637;0;Bottom;TXT47
+63;;;10.3727;-37.6409;0;Bottom;TXT36
+64;150;THT;75.3183;-83.5855;0;Bottom;R1
+65;;;43.604;-65.8205;0;Bottom;Via3
+66;;;21.9891;-81.8498;0;Bottom;TXT42
+67;;;10.3727;-42.862;0;Bottom;TXT38
+68;;;10.5138;-40.322;0;Bottom;TXT37

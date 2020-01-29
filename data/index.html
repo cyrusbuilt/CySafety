@@ -1,0 +1,104 @@
+<html>
+    <head></head>
+    <body>
+        <style type="text/css">
+            .button:hover, .button:focus {
+                background: #f2f2f2;
+                border-color: #8c8c8c;
+                box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #d9d9d9, inset 0 0 0 1px #f2f2f2;
+            }
+            .button-blue {
+                background-color: #42b0e3;
+                background-image: linear-gradient(to bottom, #42b0e3, #2ba9e3);
+                border: 1px solid #107db0;
+                box-shadow: inset 0 1px 0 #7cd4fc, inset 0 -1px 0 #2696c9, inset 0 0 0 1px #59b7e3, 0 2px 4px rgba(0, 0, 0, 0.2);
+                color: white;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            }
+            .button-blue:hover, .button-blue:focus {
+                background: #2ba9e3;
+                border-color: #004c6f;
+                box-shadow: inset 0 1px 0 #7cd4fc, inset 0 -1px 0 #2696c9, inset 0 0 0 1px #59b7e3;
+            }
+            .button-blue:active {
+                background: #2ba9e3;
+                box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+        <form action='/submit'>
+            <label name="hostname" style="font-size:30px; margin-right: 1.67em;">Host Name</label><br>
+            <input style="font-size:30px;" name="HOST_NAME" type="text" id="HOSTNAME">
+            <br><br>
+            <label name="ssid" style="font-size:30px; margin-right: 1.67em;">Network SSID </label><br>
+            <input style="font-size:30px;" name="SSID" type="text" id="SSID">
+            <br><br>
+            <label name="pass" style="font-size:30px;">Network Password</label><br>
+            <input style="font-size:30px;" name="PASSWORD" id="PASSWORD" type="password">
+            <br><br>
+            <label name="mqtt_broker" style="font-size:30px;">MQTT Broker</label><br>
+            <input style="font-size:30px;" type="text" name="MQTT_BROKER" id="MQTT_BROKER">
+            <br><br>
+            <label name="mqtt_port" style="font-size:30px;">MQTT Port</label><br>
+            <input style="font-size:30px;" type="number" name="MQTT_PORT" id="MQTT_BROKER">
+            <br><br>
+            <label name="mqtt_control_channel" style="font-size:30px;">MQTT Control Channel</label><br>
+            <input style="font-size:30px;" type="text" name="MQTT_CTRL" id="MQTT_CTRL">
+            <br><br>
+            <label name="mqtt_status_channel" style="font-size:30px;">MQTT Status Channel</label><br>
+            <input style="font-size:30px;" type="text" name="MQTT_STAT" id="MQTT_STAT">
+            <br><br>
+            <label name="ota_port" style="font-size:30px;">OTA Port</label><br>
+            <input style="font-size:30px;" type="number" name="OTA_PORT" id="OTA_PORT">
+            <br><br>
+            <label name="ota_password" style="font-size:30px;">OTA Password</label><br>
+            <input style="font-size:30px;" type="password" name="OTA_PASSWORD" id="OTA_PASSWORD">
+            <br><br>
+            <label name="Time" style="font-size:30px;">Your Time Zone</label><br>
+            <br><br>
+            <select name="TIME_ZONE" style="font-size:25px;">
+                <option value="-11">(-11:00) Midway Island, Samoa</option>
+                <option value="-10">(-10:00) Hawaii</option>
+                <option value="-9">(-09:00) Alaska</option>
+                <option value="-8">(-08:00) Pacific Time (US & Canada)</option>
+                <option value="-7">(-07:00) Mountain Time (US & Canada)</option>
+                <option value="-6">(-06:00) Central Time (US & Canada)</option>
+                <option value="-5" selected>(-05:00) Eastern Time (US & Canada)</option>
+                <option value="-4">(-04:00) Atlantic Time (Canada)</option>
+            </select>
+            <br><br>
+            <input style="font-size:30px;" type="checkbox" name="DHCP" value="1" id="DHCP"><label name="use_dhcp" style="font-size:30px;">Use DHCP?</label>
+            <br><br>
+            <label name="ip" style="font-size:30px;">IP:</label><br>
+            <input style="font-size:30px;" type="text" name="IP_ADDR" id="IP_ADDR" disabled>
+            <br><br>
+            <label name="sm" style="font-size:30px;">Subnet Mask:</label><br>
+            <input style="font-size:30px;" type="text" name="SM_ADDR" id="SM_ADDR" disabled>
+            <br><br>
+            <label name="gw" style="font-size:30px;">Gateway:</label><br>
+            <input style="font-size:30px;" type="text" name="GW_ADDR" id="GW_ADDR" disabled>
+            <br><br>
+            <label name="dns" style="font-size:30px;">DNS:</label><br>
+            <input style="font-size:30px;" type="text" name="DNS_ADDR" id="DNS_ADDR" disabled>
+            <br><br>
+            <br><br><br>
+            <input type="submit" class="button button-blue" style="font-size:30px; width:500px;height:40px;" value="Submit">
+        </form>
+        <form action='/restore'>
+            <input type="submit" class="button button-blue" style="font-size:30px; width:500px;height:40px;" value="Factory Restore">
+        </form>
+    </body>
+    <script type="text/javascript">
+        document.getElementById("DHCP").onchange = function() {
+            const fields = [
+                "IP_ADDR",
+                "SM_ADDR",
+                "GW_ADDR",
+                "DNS_ADDR"
+            ];
+
+            fields.forEach((f) => {
+                document.getElementById(f).disabled = !this.checked;
+            });
+        };
+    </script>
+</html>

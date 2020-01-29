@@ -1,0 +1,19 @@
+{
+    "needsConfigured": true,
+    "hostname": "CYSAFETY1",
+    "useDHCP": false,
+    "ssid": "CYSAFETY",
+    "password": "ThereIsNoSpoon",
+    "mqttBroker": "you_mqtt_broker_name_or_ip",
+    "mqttPort": 8883,
+    "mqttStatusChannel": "cysafety/status",
+    "mqttControlChannel": "cysafety/contro",
+    "configurationPort": 80,
+    "otaPort": 8266,
+    "otaPassword": "your_ota_password",
+    "ip": "192.168.0.248",
+    "subnetMask": "255.255.255.0",
+    "gateway": "192.168.0.1",
+    "dns": "192.168.0.1",
+    "timeZone": -4
+}
